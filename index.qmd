@@ -144,7 +144,9 @@ Restart R, especially when things get weird.
 
 . . .
 
-<brshort>
+::: columns
+::: {.column width="50%"}
+
 
 Session -\> Restart R or
 
@@ -152,12 +154,53 @@ Session -\> Restart R or
 
 -   Cmd + Shift + 0 / Cmd + Shift + F10 (Mac)
 
+:::
+
+::: {.column width="50%"}
 `Tools -> Global Options -> Workspace`
 
 ![](img/workspace-options.PNG)
+:::
+:::
 
 ::: footer
 :::
+
+
+## Your turn, exercise 00
+
+[Click here to open the NHS-R RStudio Cloud debugging work space.](https://rstudio.cloud/spaces/293870/join?access_code=5lSkhQedDhpg6X-KDU0j433JgYYpIsz1YZaLGXBU){target="_blank"}
+
+
+<brshort>
+
+::: question
+In RStudio Cloud, set your Workspace options as shown.
+:::
+
+`Tools -> Global Options -> Workspace`
+
+::: columns
+::: {.column width="50%"}
+![](img/workspace-options.PNG)
+:::
+:::
+
+```{r}
+countdown(
+  minutes = 3,
+  # Fanfare when it's over
+  play_sound = TRUE,
+  # Set timer theme to match solarized colors
+  color_border              = "#FFFFFF",
+  color_text                = "#7aa81e",
+  color_running_background  = "#7aa81e",
+  color_running_text        = "#FFFFFF",
+  color_finished_background = "#ffa07a",
+  color_finished_text       = "#FFFFFF",
+  font_size = "2em",
+  )
+```
 
 ## 3. Reprex
 
@@ -793,7 +836,7 @@ options(error = NULL)
 
 `trace(what = fun, tracer = browser)` <br> is equivalent to
 
--   inserting `broswer()` in first line of function
+-   inserting `browser()` in first line of function
 
 -   `debug(fun)`
 
@@ -828,7 +871,7 @@ untrace(colSums)
 
 `trace(what = colSums, tracer = browser)` <br> is equivalent to
 
--   inserting `broswer()` in first line of `colSums` <br> if we had the source code
+-   inserting `browser()` in first line of `colSums` <br> if we had the source code
 
 -   `debug(colSums)`
 

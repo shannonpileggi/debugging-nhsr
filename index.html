@@ -482,16 +482,42 @@
 </div>
 </div>
 <div class="fragment">
-<p><brshort></brshort></p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p>Session -&gt; Restart R or</p>
 <ul>
 <li><p>Ctrl + Shift + F10 (Windows),</p></li>
 <li><p>Cmd + Shift + 0 / Cmd + Shift + F10 (Mac)</p></li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p><code>Tools -&gt; Global Options -&gt; Workspace</code></p>
 <p><img data-src="img/workspace-options.PNG"></p>
+</div>
+</div>
 <div class="footer">
 
+</div>
+</div>
+</section>
+<section id="your-turn-exercise-00" class="slide level2">
+<h2>Your turn, exercise 00</h2>
+<p><a href="https://rstudio.cloud/spaces/293870/join?access_code=5lSkhQedDhpg6X-KDU0j433JgYYpIsz1YZaLGXBU" target="_blank">Click here to open the NHS-R RStudio Cloud debugging work space.</a></p>
+<p><brshort></brshort></p>
+<div class="question">
+<p>In RStudio Cloud, set your Workspace options as shown.</p>
+</div>
+<p><code>Tools -&gt; Global Options -&gt; Workspace</code></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/workspace-options.PNG"></p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_c736d3a8" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
 </div>
 </div>
 </section>
@@ -924,7 +950,7 @@ x = a </code></pre>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_33013b43" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;font-size:2em;">
+<div class="countdown" id="timer_26f57079" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;font-size:2em;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1060,7 +1086,7 @@ x = a </code></pre>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_b9f12e56" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_81dda915" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">07</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1134,7 +1160,7 @@ x = a </code></pre>
 <h2>trace() overview</h2>
 <p><code>trace(what = fun, tracer = browser)</code> <br> is equivalent to</p>
 <ul>
-<li><p>inserting <code>broswer()</code> in first line of function</p></li>
+<li><p>inserting <code>browser()</code> in first line of function</p></li>
 <li><p><code>debug(fun)</code></p></li>
 </ul>
 <div class="fragment">
@@ -1173,7 +1199,7 @@ x = a </code></pre>
 <p><br></p>
 <p><code>trace(what = colSums, tracer = browser)</code> <br> is equivalent to</p>
 <ul>
-<li><p>inserting <code>broswer()</code> in first line of <code>colSums</code> <br> if we had the source code</p></li>
+<li><p>inserting <code>browser()</code> in first line of <code>colSums</code> <br> if we had the source code</p></li>
 <li><p><code>debug(colSums)</code></p></li>
 </ul>
 </section>
@@ -1239,7 +1265,7 @@ x = a </code></pre>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_ac27680e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_a9f71a0f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1387,7 +1413,7 @@ x = a </code></pre>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_bd338b0d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_fa22e993" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1432,7 +1458,7 @@ x = a </code></pre>
 <p><em>Hints on next slides.</em></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_4bc6047b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_56489d93" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
